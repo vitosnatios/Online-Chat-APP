@@ -42,7 +42,16 @@
 body{
   background: rgb(219, 227, 255);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: pre-line;
 }
 body *{
   border-radius: 5px;
+}
+img{
+  height: 45px;
+  width: 45px;
+}
+.message p{
+  word-break: break-all;
+  margin-top: 15px;
 }
