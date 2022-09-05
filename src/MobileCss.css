@@ -1,0 +1,101 @@
+@media only screen and (max-width: 600px) {
+    body{
+        padding: 15px;
+    }
+    input[name="username"]{
+        background: rgb(209, 200, 243);
+    }
+    [name="content"]{
+      background: rgb(209, 200, 243);
+      border: 1px solid black;
+    }
+    label[for="content"]{
+      position: relative;
+    }
+    [data-button]{
+      margin-top: 8px;
+      background: rgb(209, 200, 243);
+      width: 100px;
+      float: left;
+    }
+    [data-window-user-one]{
+      background: rgb(156, 129, 255);
+      padding: 3px 1rem 30px 1rem;
+      display: inline-block;
+      height: 158px;
+      width: 218.5px;
+    }
+    .generalWindow{
+      display: inline-block;
+      padding: 15px;
+      background: rgb(53, 43, 92);
+      position: relative;
+    }
+    img.userPic{
+      border-radius: 5px;
+      bottom: 15px;
+      left: 17px;
+      position: absolute;
+      max-height: 45px;
+    }
+    .pastMessages{
+      padding: 15px 15px 0 15px;
+      background:rgb(219, 211, 253);
+      width: 220px;
+      height: 320px;
+      overflow: auto;
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 15px;
+    }
+    .message{
+      position: relative;
+      padding: 5px;
+      padding-right: 10px;
+      background:rgb(180, 166, 240);
+      display: flex;
+      margin: 5px 0;
+    }
+    .message img{
+      max-height: 45px;
+      border-radius: 5px;
+    }
+    .message h5{
+      margin: 0;
+      position: absolute;
+      top: 5px;
+      left: 54px;
+    }
+    .message p{
+      margin: 0;
+      position: relative;
+      margin-top: 10px;
+      left: 3px;
+    }
+    .appWindow{
+      display:grid;
+      place-content:center;
+    }
+    [name="imgurl"]{
+      background: rgb(209, 200, 243);
+    }
+    .pastMessages::-webkit-scrollbar, .img::-webkit-scrollbar {
+      width: 10px;
+      background: #b3a8f1;
+    }
+    .pastMessages::-webkit-scrollbar-track, .img::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    .pastMessages::-webkit-scrollbar-thumb, .img::-webkit-scrollbar-thumb {
+      background-color: rgb(111, 111, 170);
+      border-radius: 5px;
+      outline: 1px solid rgb(91, 108, 124);
+    }
+    .bigSendButton{
+      display: none;
+    }
+    /* tittle */
+    .title{
+      text-align: center;
+    }
+}
