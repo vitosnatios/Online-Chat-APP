@@ -52,6 +52,6 @@ img{
   width: 45px;
 }
 .message p{
-  word-break: break-all;
+  word-break: break-word;
   margin-top: 15px;
 }
