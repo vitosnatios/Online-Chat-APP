@@ -1,6 +1,6 @@
-import './App.css';
-import Body from './components/Body.jsx';
-import Title from './components/Title.jsx';
+import "./App.css";
+import Body from "./components/Body.jsx";
+import Title from "./components/Title.jsx";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Title />
       <Body />
     </div>
-  )
+  );
 }
 
 export default App;

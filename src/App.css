@@ -1,5 +1,5 @@
-@import url('ComputerCss.css');
-@import url('MobileCss.css');
+@import url("ComputerCss.css");
+@import url("MobileCss.css");
 
 .App {
   text-align: center;
@@ -39,23 +39,22 @@
     transform: rotate(360deg);
   }
 }
-body{
+body {
   background: rgb(219, 227, 255);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   white-space: pre-line;
 }
-body *{
+body * {
   border-radius: 5px;
 }
-img{
+img {
   height: 45px;
   width: 45px;
 }
-.message p{
+.message p {
   word-break: break-word;
-  margin-top: 15px;
 }
-[name="content"]{
+[name="content"] {
   max-width: 190px;
   min-height: 31px;
 }
