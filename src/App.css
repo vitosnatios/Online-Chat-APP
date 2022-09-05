@@ -55,3 +55,7 @@ img{
   word-break: break-word;
   margin-top: 15px;
 }
+[name="content"]{
+  max-width: 190px;
+  min-height: 31px;
+}

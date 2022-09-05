@@ -12,6 +12,9 @@
     label[for="content"]{
       position: relative;
     }
+    label{
+      display: block;
+    }
     [data-button]{
       margin-top: 8px;
       background: rgb(209, 200, 243);
@@ -22,8 +25,8 @@
       background: rgb(156, 129, 255);
       padding: 3px 1rem 30px 1rem;
       display: inline-block;
-      height: 158px;
       width: 218.5px;
+      /* margin-bottom: */
     }
     .generalWindow{
       display: inline-block;
