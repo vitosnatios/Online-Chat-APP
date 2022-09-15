@@ -1,38 +1,44 @@
-@media only screen and (max-width: 600px) {
-  body {
-    padding: 15px;
-  }
-  input[name="username"] {
+@media only screen and (min-width: 600px) {
+  input[name='username'] {
     background: rgb(209, 200, 243);
+    position: relative;
+    left: 31px;
+    margin-bottom: 3px;
   }
-  [name="content"] {
+  [name='content'] {
     background: rgb(209, 200, 243);
     border: 1px solid black;
-  }
-  label[for="content"] {
     position: relative;
+    left: 25px;
   }
-  label {
-    display: block;
+  label[for='content'] {
+    position: relative;
+    bottom: 22px;
   }
   [data-button] {
-    margin-top: 8px;
+    margin-top: 5px;
     background: rgb(209, 200, 243);
-    width: 100px;
+    width: 150px;
     float: left;
+    position: relative;
+    left: 82px;
   }
   [data-window-user-one] {
     background: rgb(156, 129, 255);
-    padding: 3px 1rem 30px 1rem;
+    padding: 1rem;
     display: inline-block;
-    width: 218.5px;
-    /* margin-bottom: */
+    width: 287px;
+    bottom: 25px;
+    position: relative;
+    top: 30px;
+    min-height: 100px;
   }
   .generalWindow {
     display: inline-block;
-    padding: 15px;
-    background: rgb(53, 43, 92);
+    padding: 25px;
+    background-image: linear-gradient(rgb(112 82 231), #09026a);
     position: relative;
+    padding-bottom: 55px;
   }
   img.userPic {
     border-radius: 5px;
@@ -44,12 +50,11 @@
   .pastMessages {
     padding: 15px 15px 0 15px;
     background: rgb(219, 211, 253);
-    width: 220px;
+    width: 290px;
     height: 320px;
     overflow: auto;
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 15px;
   }
   .message {
     position: relative;
@@ -57,7 +62,7 @@
     padding-right: 10px;
     background: rgb(180, 166, 240);
     display: flex;
-    margin: 5px 0;
+    margin: 7px 0;
   }
   .message img {
     max-height: 45px;
@@ -67,6 +72,7 @@
     margin: 0;
     position: relative;
     left: 5px;
+    font-size: 15px;
   }
   .message p {
     margin: 0;
@@ -74,10 +80,12 @@
     left: 5px;
   }
   .appWindow {
+    margin-top: 10px;
     display: grid;
     place-content: center;
   }
-  [name="imgurl"] {
+  [name='imgurl'] {
+    margin-left: 9px;
     background: rgb(209, 200, 243);
   }
   .pastMessages::-webkit-scrollbar,
@@ -101,5 +109,50 @@
   /* tittle */
   .title {
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .pastMessages {
+    width: 490px;
+  }
+  .bigSendButton {
+    display: initial;
+    margin-top: 15px;
+    width: 180px;
+    height: 150px;
+    font-size: 30px;
+    background: rgb(186, 172, 236);
+  }
+  .smallSendButton {
+    display: none;
+  }
+  [data-button] {
+    margin-top: 28px;
+    height: 134px;
+    background: rgb(209, 200, 243);
+    width: 180px;
+    float: right;
+    position: initial;
+  }
+  .generalWindow {
+    padding-bottom: 25px;
+  }
+  [data-window-user-one] {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .pastMessages {
+    width: 1090px;
+  }
+  .bigSendButton {
+    width: 780px;
+  }
+  .generalWindow {
+    padding-bottom: 25px;
+  }
+  [data-window-user-one] {
+    margin-bottom: 30px;
   }
 }
