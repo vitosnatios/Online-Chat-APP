@@ -59,11 +59,11 @@ body {
   border-top: 1px solid var(--font-color);
   border-bottom: 1px solid var(--font-color);
   padding: 0.5rem;
+  word-break: break-word;
 }
 
 .message {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   border: 1px solid var(--font-color);
   background: var(--bg);
