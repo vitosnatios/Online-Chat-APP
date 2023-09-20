@@ -1,11 +1,11 @@
-import Post from "./Post.jsx";
-import Form from "./Form.jsx";
-import { useState, useEffect } from "react";
+import Post from './Post.jsx';
+import Form from './Form.jsx';
+import { useState, useEffect } from 'react';
 export default function Body() {
   const [postData, setPostData] = useState([]);
 
   const fetchData = async () => {
-    const fetchedData = fetch("https://chat-backend.onrender.com/getPosts");
+    const fetchedData = fetch('http://localhost:5000/getPosts');
     const fetchedDataJson = await (await fetchedData).json();
     setPostData(fetchedDataJson.data);
   };
@@ -15,9 +15,9 @@ export default function Body() {
   }, []);
 
   return (
-    <div className="appWindow">
-      <div className="generalWindow">
-        <div className="pastMessages">
+    <div className='appWindow'>
+      <div className='generalWindow'>
+        <div className='pastMessages'>
           {postData.length > 0
             ? postData
                 .map((post, index) => {
@@ -31,7 +31,7 @@ export default function Body() {
                   );
                 })
                 .reverse()
-            : "Loading..."}
+            : 'Loading...'}
         </div>
         <Form fetchAgain={fetchData} />
       </div>
