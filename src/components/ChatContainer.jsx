@@ -1,6 +1,7 @@
-import Post from './Post.jsx';
+import Posts from './Posts.jsx';
 import Form from './Form.jsx';
 import { useState, useEffect } from 'react';
+
 export default function Body() {
   const [postData, setPostData] = useState([]);
 
@@ -16,22 +17,7 @@ export default function Body() {
 
   return (
     <div className='app-container'>
-      <div className='past-messages'>
-        {postData.length > 0
-          ? postData
-              .map((post, index) => {
-                return (
-                  <Post
-                    key={index}
-                    imgUrl={post.imgurl}
-                    username={post.username}
-                    content={post.content}
-                  />
-                );
-              })
-              .reverse()
-          : 'Loading...'}
-      </div>
+      <Posts postData={postData} />
       <Form fetchAgain={fetchData} />
     </div>
   );

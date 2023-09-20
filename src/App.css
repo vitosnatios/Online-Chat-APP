@@ -69,10 +69,44 @@ body {
   background: var(--bg);
   padding: 1rem;
   border-radius: 0.5rem;
-  width: 98%;
 }
 
 .message img {
   width: 60px;
   border-radius: 5px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+@media (max-width: 350px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form input,
+.form textarea {
+  padding: 0.25rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 0.5rem;
+  background: var(--font-color);
+}
+
+.form button {
+  grid-column: 1/2;
+  background: #316dca;
+  color: #f5f5f5;
+  padding: 0.25rem;
+  border-radius: 8px;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background: #2c61b1;
 }
