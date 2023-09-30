@@ -6,7 +6,9 @@ export default function Body() {
   const [postData, setPostData] = useState([]);
 
   const fetchData = async () => {
-    const fetchedData = fetch('https://chat-backend.onrender.com/getPosts');
+    const fetchedData = fetch(
+      'https://online-chat-backend-azure.vercel.app/api/getPosts'
+    );
     const fetchedDataJson = await (await fetchedData).json();
     setPostData(fetchedDataJson.data);
   };

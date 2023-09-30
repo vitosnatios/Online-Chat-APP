@@ -20,7 +20,7 @@ export default function Form(props) {
     e.preventDefault();
     const { content } = userForm;
     if (!content.length > 0) return;
-    await fetch('https://chat-backend.onrender.com/addPost', {
+    await fetch('https://online-chat-backend-azure.vercel.app/api/addPost', {
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify(userForm),
